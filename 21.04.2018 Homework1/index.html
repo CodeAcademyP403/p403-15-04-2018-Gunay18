@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-5 right" id="bg">
+            <div class="ball" id="circle"></div>
+        </div>
+        <div class="col-md-4 left ml-5">
+            <h3>Create own circle:</h3>
+            <div class="form-group"></div>
+            <label for="ballcolor">Color:</label>
+            <br>
+            <input type="color" class="form-control color mt-2 mb-2" name="color" id="ballcolor">
+            <br>
+            <label for="bgcolor">Background:</label>
+            <br>
+            <input type="color" class="form-control color mt-2 mb-2" name="bgcolor" id="bgcolor">
+            <br>
+            <label for="circlePhoto"> Add photo to circle: </label>
+            <input type="text" class="form-control mt-2 mb-2" id="circlePhoto">
+
+            <label for="bgPhoto "> Add photo to background: </label>
+            <input type="text " class="form-control mt-2 mb-2 " id="bgPhoto" >
+
+            <label for="radious ">Radious: </label>
+            <input type="number " class="form-control mt-2 mb-2 " id="radious">
+
+            <label for="myRange">Speed: </label> <br>
+            <input type="range" min="1" max="10" value="50" class="slider" id="myRange">
+        </div>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

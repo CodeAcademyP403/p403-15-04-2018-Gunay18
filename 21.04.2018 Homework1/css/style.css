@@ -1,0 +1,47 @@
+* {box-sizing: border-box; margin:0px; padding: 0px;}
+
+
+.row{
+    width: 1400px;;
+    height: 600px;
+    margin: 50px 20px;
+}
+.row .right{
+    height: 100%;
+    border: 1px solid black;
+    line-height: 500px;
+    position: relative;
+}
+.row .right .ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: black;
+    position: absolute;
+    /* top: 50%; */
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.left{
+    padding: 20px;
+}
+.left .color{
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+}
+
+@keyframes move {
+    0%   {top: 0%}
+    25%  {top: 50%}
+    50%  {top: 100%}
+    75%  {top: 50%}
+    100% {top: 0%}
+}
